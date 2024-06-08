@@ -1,0 +1,108 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifydemo-dev-a7fed-authRole",
+      "UnauthRoleArn": "arn:aws:iam::891376999020:role/amplify-amplifydemo-dev-a7fed-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::891376999020:role/amplify-amplifydemo-dev-a7fed-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifydemo-dev-a7fed-deployment",
+      "UnauthRoleName": "amplify-amplifydemo-dev-a7fed-unauthRole",
+      "StackName": "amplify-amplifydemo-dev-a7fed",
+      "StackId": "arn:aws:cloudformation:us-east-1:891376999020:stack/amplify-amplifydemo-dev-a7fed/6628b320-2541-11ef-957d-128f15c39ab9",
+      "AmplifyAppId": "d175s2wp8ebtgi"
+    }
+  },
+  "function": {
+    "amplifydemoc0076ab2": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2024-06-08T03:05:40.695Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2024-06-08T03:05:40.742Z",
+      "distZipFilename": "amplifydemoc0076ab2-5878437a797455506263-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-amplifydemo-dev-a7fed-deployment",
+        "s3Key": "amplify-builds/amplifydemoc0076ab2-5878437a797455506263-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydemo-dev-a7fed-deployment/amplify-cfn-templates/function/amplifydemoc0076ab2-cloudformation-template.json",
+        "logicalId": "functionamplifydemoc0076ab2"
+      },
+      "lastPushTimeStamp": "2024-06-08T03:11:33.161Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::891376999020:role/amplifydemoLambdaRole357dc5b1-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:891376999020:function:amplifydemoc0076ab2-dev",
+        "Name": "amplifydemoc0076ab2-dev",
+        "LambdaExecutionRole": "amplifydemoLambdaRole357dc5b1-dev"
+      },
+      "lastPushDirHash": "Wmlh0wFtwVmYlD9Z1r4w4WvPNzI="
+    }
+  },
+  "api": {
+    "apid357c825": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "amplifydemoc0076ab2",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydemo-dev-a7fed-deployment/amplify-cfn-templates/api/apid357c825-cloudformation-template.json",
+        "logicalId": "apiapid357c825"
+      },
+      "lastPushTimeStamp": "2024-06-08T03:11:33.165Z",
+      "output": {
+        "ApiName": "apid357c825",
+        "RootUrl": "https://ydvtdkb8zi.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "ydvtdkb8zi"
+      }
+    },
+    "api4fac0809": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "amplifydemoc0076ab2",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydemo-dev-a7fed-deployment/amplify-cfn-templates/api/api4fac0809-cloudformation-template.json",
+        "logicalId": "apiapi4fac0809"
+      },
+      "lastPushTimeStamp": "2024-06-08T03:11:33.168Z",
+      "output": {
+        "ApiName": "api4fac0809",
+        "RootUrl": "https://3tx01xpnnc.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "3tx01xpnnc"
+      },
+      "lastPushDirHash": "8mfp7im9qxWBNHtp6UF94fBzR5g="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifydemo-dev-a7fed-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-06-08T03:11:33.661Z",
+      "output": {},
+      "lastPushDirHash": "YR7uwYIi0e3/cv62ZXv/4+shihM="
+    }
+  }
+}

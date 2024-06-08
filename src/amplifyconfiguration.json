@@ -1,0 +1,15 @@
+{
+  "aws_project_region": "us-east-1",
+  "aws_cloud_logic_custom": [
+    {
+      "name": "apid357c825",
+      "endpoint": "https://ydvtdkb8zi.execute-api.us-east-1.amazonaws.com/dev",
+      "region": "us-east-1"
+    },
+    {
+      "name": "api4fac0809",
+      "endpoint": "https://3tx01xpnnc.execute-api.us-east-1.amazonaws.com/dev",
+      "region": "us-east-1"
+    }
+  ]
+}
